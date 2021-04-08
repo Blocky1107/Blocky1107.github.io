@@ -57,7 +57,7 @@ body {
 }
 
 #navbar a:hover {
-    background-color: rgb(109, 107, 107);
+    background-color: gray;
     color: blue;
 }
 
