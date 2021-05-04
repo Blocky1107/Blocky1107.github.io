@@ -30,6 +30,7 @@ body {
     background-size: cover;
     opacity: 0.8;
 }
+
 .header h1 {
     color: snow;
     font-size:150px;
@@ -78,53 +79,39 @@ body {
 .sticky + .content {
     padding-top: 60px;
 }
-/*
-.project-tile{
-    font-size: 25px;
-    width: 100%;
-    background: #ff0000;
-    text-align:center;
-    padding: 20px 15px;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    grid-gap: 30px;
-    grid-auto-rows: minmax(100px, auto);
+
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.projects {
+  display: grid;
+  grid-template-areas:
+  'auto, auto, auto';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.projects > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+.profile-link {
     position: relative;
-    overflow:hidden;
-}
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(116, 120, 177);
+    color: white;
+    text-align: center;
+  }
 
-.project-one {
-    background-color: whitesmoke;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 1;
-    text-align: center;
-}
-
-.project-two { 
-    background-color: whitesmoke;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row: 1;
-    text-align: center;
-}
-    
-.project-three {
-    background-color: whitesmoke;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 2;
-    text-align: center;
-}
-    
-.project-four {
-    background-color: whitesmoke;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row: 2;
-    text-align: center;
-}
-*/
 .about {
     background-color:#A9A9A9;
     text-align: right;
